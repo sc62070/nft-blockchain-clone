@@ -17,7 +17,9 @@ const style = {
 const Header = () => {
     return <div className={style.wrapper}>
         <link>
-        <div className={style.logoContainer}></div>
+        <div className={style.logoContainer}>
+            <Image src={}
+        </div>
         </link>
     </div>
 }
