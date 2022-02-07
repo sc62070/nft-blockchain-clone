@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-import React from 'react';
-=======
 import Image from 'next/image'
 import React from 'react'
 
->>>>>>> 26d4974640030056812bb72f1c0e02b4ec9d9e8f
 
 const style = {
     wrapper: `bg-[#04111d] w-screen px-[1.2rem] py-[0.8rem] flex `,
@@ -19,20 +15,7 @@ const style = {
   }
 
 const Header = () => {
-<<<<<<< HEAD
   return <div>Header</div>;
 };
 
 export default Header;
-=======
-    return <div className={style.wrapper}>
-        <link>
-        <div className={style.logoContainer}>
-            <Image src={}
-        </div>
-        </link>
-    </div>
-}
-
-export default Header
->>>>>>> 26d4974640030056812bb72f1c0e02b4ec9d9e8f
