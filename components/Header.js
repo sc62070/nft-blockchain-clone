@@ -1,5 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/Link'
 import React from 'react'
+import openseaLogo from '../assets/opensea.png'
 
 
 const style = {
@@ -15,7 +17,15 @@ const style = {
   }
 
 const Header = () => {
-  return <div>Header</div>;
+  return (
+  <div className={style.wrapper}>
+    <link href="/'">
+      <div className={style.logoContainer}>
+          <Image src={openseaLogo} height={40} width={40} />
+      </div>
+    </link>
+  </div>
+  )
 };
 
 export default Header;
