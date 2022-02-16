@@ -3,7 +3,7 @@ import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
 
 const supportedChainIds =[4]
 const connectors = {
-  injjected:{},
+  injected:{},
 }
 
 function MyApp({ Component, pageProps }) {
