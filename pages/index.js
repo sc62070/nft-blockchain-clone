@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import { useWeb3 } from '@3rdweb/hooks'
 
 const style = {
   wrapper: ``,
@@ -10,7 +11,9 @@ const style = {
 }
 
 export default function Home() {
+  const { address, connectWallet} = useWeb3()
   return (
+    
     <>
       <Header />
       <Hero />
