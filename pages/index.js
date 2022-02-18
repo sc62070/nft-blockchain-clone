@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import { useWeb3 } from '@3rdweb/hooks'
+import { useEffect } from 'react'
 
 const style = {
   wrapper: ``,
@@ -12,9 +13,15 @@ const style = {
 
 export default function Home() {
   const { address, connectWallet} = useWeb3()
+  
+  useEffect() => {
+    if (!address) return
+    ;(async() => (
+      
+    ))
+  } [address])
   return (
       <div className={style.wrapper}>
-        {address ? ( 
     <>
       <Header />
       <Hero />
