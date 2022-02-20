@@ -14,12 +14,23 @@ const style = {
 export default function Home() {
   const { address, connectWallet} = useWeb3()
   
-  useEffect() => {
+  useEffect(() => {
     if (!address) return
-    ;(async() => (
-      
-    ))
-  } [address])
+    ;(async() => {
+      const userDoc = {
+        _type: 'users',
+        _id: address,
+        userName: 'Unnamed',
+        walletAddress: address,
+      }
+
+      const result = await client.createIfNotExists(userDoc)
+  })()
+
+  }, [address])
+
+  const someFunction = () => 2
+
   return (
       <div className={style.wrapper}>
     <>
