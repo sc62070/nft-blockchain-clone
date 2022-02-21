@@ -29,10 +29,9 @@ export default function Home() {
 
   }, [address])
 
-  const someFunction = () => 2
-
   return (
       <div className={style.wrapper}>
+        {address ? (
     <>
       <Header />
       <Hero />
